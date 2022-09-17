@@ -1,13 +1,10 @@
-import { Link } from "react-router-dom"
+import Navbar from "../components/Navbar"
+import InfoModal from "../components/InfoModal"
 
 export default function Home() {
     return(
       <div>
-        <div className="text-center bg-blue-400 py-5 text-black">
-          <h1 className="text-2xl font-bold font-epilogue">
-            Project Brisket
-          </h1>
-        </div>
+        <Navbar />
         <div className="overflow-hidden bg-yellow-200 h-screen">
           <div>
             <img src='gifs/taunt.gif' alt='bridget music taunt' className="block mx-auto" />
@@ -18,11 +15,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="p-6 w-fit mx-auto">
-            <button className="bg-blue-400 rounded-2xl mx-auto p-3 hover:bg-blue-500">
-                <Link to="/movelist">
-                    <h1 className="text-xl">Start Here</h1>
-                </Link>
-            </button>
+            <InfoModal />
           </div>
         </div>
       </div>
