@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar"
 import InfoModal from "../components/InfoModal"
+import FrameDataModal from "../components/FrameDataModal"
 
 export default function Home() {
     return(
@@ -14,8 +15,9 @@ export default function Home() {
               The all in one place for Bridget Frame Data Visualization
             </h1>
           </div>
-          <div className="p-6 w-fit mx-auto">
+          <div className="p-6 w-fit mx-auto flex">
             <InfoModal />
+            <FrameDataModal />
           </div>
         </div>
       </div>
