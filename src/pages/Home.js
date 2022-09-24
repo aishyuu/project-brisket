@@ -54,6 +54,7 @@ export default function Home() {
                     moveOnBlockFrames={move.OnBlock}
                     moveChipRatio={move.ChipRatio}
                     moveOTGRatio={move.OTGRatio}
+                    moveNumOfFramesInVideo={move.NumOfFramesInVideo}
                   />
                 </div>
                 
