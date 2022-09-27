@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-brisket/static/css/main.a31f4f82.css",
+    "main.js": "/project-brisket/static/js/main.5db8ba4c.js",
+    "index.html": "/project-brisket/index.html",
+    "main.a31f4f82.css.map": "/project-brisket/static/css/main.a31f4f82.css.map",
+    "main.5db8ba4c.js.map": "/project-brisket/static/js/main.5db8ba4c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a31f4f82.css",
+    "static/js/main.5db8ba4c.js"
+  ]
+}
