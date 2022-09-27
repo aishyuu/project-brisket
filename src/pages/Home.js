@@ -1,19 +1,12 @@
 import React from 'react';
-import Axios from 'axios';
 import Navbar from "../components/Navbar"
 import InfoModal from "../components/InfoModal"
 import FrameDataModal from "../components/FrameDataModal"
 import MoveDisplay from '../components/MoveDisplay';
+import FrameData from '../data/FrameData.json'
 
 export default function Home() {
-  const [bridgetFrameData, setBridgetFrameData] = React.useState([]);
-
-  React.useEffect(() => {
-    Axios.get("http://localhost:3001/api/get").then((response, err) => {
-      if(err) { return console.error('error: ' + err.message);}
-      setBridgetFrameData(response.data);
-    })
-  }, [])
+  const bridgetFrameData = FrameData;
 
     return(
       <div>
@@ -40,9 +33,9 @@ export default function Home() {
             <FrameDataModal />
           </div>
           <div className="grid bg-yellow-200 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
-            {bridgetFrameData.map((move) => {
+            {bridgetFrameData.map((move, i) => {
               return(
-                <div>
+                <div key={i}>
                   <MoveDisplay
                     moveName={move.MoveName}
                     moveInput={move.MoveInput}

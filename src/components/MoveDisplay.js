@@ -18,6 +18,7 @@ export default function MoveDisplay(props) {
                 moveURL={currentMoveURL}
                 moveInput={props.moveInput}
                 framesInVideo={props.moveNumOfFramesInVideo}
+                id={props.moveId}
             />
             {/* Footer */}
             <div className="mt-3">

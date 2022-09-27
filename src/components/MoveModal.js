@@ -9,6 +9,7 @@ export default function MoveModal(props) {
   let [currentFrame, setCurrentFrame] = React.useState(0)
   let framesURL = "frameByFrame/Bridget_" + props.moveInput + "/frame_" + currentFrame + ".png";
   let [showMoveModal, setShowMoveModal] = React.useState(false);
+
   return (
     <div>
       <button>
