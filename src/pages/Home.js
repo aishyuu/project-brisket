@@ -13,7 +13,7 @@ export default function Home() {
         <Navbar />
         <div className="overflow-x-auto bg-yellow-200">
           <div>
-            <img src='gifs/taunt.gif' alt='bridget music taunt' className="block mx-auto" />
+            <img src={process.env.PUBLIC_URL + '/gifs/taunt.gif'} alt='bridget music taunt' className="block mx-auto" />
           </div>
           <div className="p-6 bg-white border-spacing-8 border-white border-2 rounded-lg w-fit mx-auto drop-shadow-lg">
             <h1 className="text-lg font-epilogue lg:text-3xl">

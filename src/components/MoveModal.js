@@ -14,7 +14,7 @@ export default function MoveModal(props) {
     <div>
       <button>
         <img
-          src={props.moveURL}
+          src={process.env.PUBLIC_URL + "/" + props.moveURL}
           alt="Loading..."
           onClick={() => setShowMoveModal(true)}
         />
@@ -28,7 +28,7 @@ export default function MoveModal(props) {
                 {/* Body */}
                 <div className="relative flex-auto overflow-y-auto">
                     <img 
-                        src={framesURL}
+                        src={process.env.PUBLIC_URL + "/" + framesURL}
                         alt="loading..."
                     />
                 </div>
